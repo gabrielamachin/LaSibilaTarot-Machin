@@ -5,13 +5,32 @@ nav
     padding: 10px;
 }
 
-button
+.boton__gradiente 
 {
-    background: #F28F79;
-    color: #EBF6FC;
-    margin: 5px;
-    border-color: #F28F79;
+    margin: 2px;
     font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    padding: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #EBF6FC;
+    border-radius: 10px;
+    border-style: none;
+    width: 200px;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+    background: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%);
+}
+
+.boton__gradiente:hover
+{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 8px 10px 12px;
+    background-position: right center;
 }
 
 .header
