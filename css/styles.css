@@ -66,6 +66,20 @@ nav
     justify-content: space-between;
 }
 
+.nav-link
+{
+    color: #EBF6FC;
+}
+
+.nav-item
+{
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    margin: 0px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .nav__listaredes
 {
     list-style: none;
@@ -90,7 +104,7 @@ nav
 .grilla__columnas
 {
     display: flex;
-    
+    padding-bottom: 20px;
 }
 
 .blog
@@ -239,6 +253,7 @@ nav
     flex-basis: 50%;
     align-items: center;
     gap: 0.5rem;
+    margin: 20px;
 }
 
 .contenedor__acercade
@@ -267,6 +282,23 @@ nav
 .servicios
 {
     padding: 0.5rem;
+}
+
+.seccionprincipal
+{
+    margin: 20px;
+}
+
+.carousel {
+    width:640px;
+    height:360px;
+  }
+
+.list-group-item
+{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 20px;
 }
 
 /* MEDIA QUERIES - RESPONSIVE */
