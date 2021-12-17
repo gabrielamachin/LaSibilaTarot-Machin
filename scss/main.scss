@@ -185,6 +185,9 @@ nav{
             color: $paleta-color-titulos;
             font-family: $fuente-parrafos;
             font-weight: bold;
+        }
+        &__placeholder{
+            font-family: $fuente-parrafos;
         } 
         &__boton{
             background: $paleta-color-fondos;

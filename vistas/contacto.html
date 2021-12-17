@@ -38,28 +38,32 @@
         </header>
         <main>
             <section>
-                <form action="#" method="get" enctype="text/plain">
-                    <fieldset class="contacto">
-                        <legend class="blog__titulo">Fomulario de contacto</legend>
-                        <label for="nombre" class="contacto__campos">Nombre:</label>
-                        <input type="text" name="nombre" placeholder="Ingresa tu nombre">
-                        <br><br>
-                        <label for="apellido" class="contacto__campos">Apellido:</label>
-                        <input type="text" name="apellido" placeholder="Ingresa tu apellido">
-                        <br><br>
-                        <label for="email" class="contacto__campos">Email:</label>
-                        <input type="text" name="email" placeholder="Tu email">
-                        <br><br>
-                        <label for="email" class="contacto__campos">Mensaje:</label>
-                        <input type="text" placeholder="Tu mensaje">
-                        <br><br>
-                        <label for="email" class="contacto__campos">Celular:</label>
-                        <input type="number" placeholder="Número de celular">
-                        <br><br>
-                        <input type="submit" class="boton__gradiente" value="Enviar">
-                        <input type="reset" class="boton__gradiente" value="Reiniciar">
-                    </fieldset>
-                </form>
+              <div class="seccionprincipal">
+                <h1 class="titulo">Contacto</h1>
+                <p class="descripcion"> Si tenés alguna duda, consulta o comentario y querés comunicarte conmigo, completá el siguiente formulario
+                  y a la brevedad me pondré en contacto con vos.
+                </p>
+              </div>
+              <div class="contacto">
+                <label for="nombre" class="form-label contacto__campos">Nombre y apellido:</label>
+                <div class="mb-3">
+                  <input type="text" class="form-control contacto__placeholder" placeholder="Ingresa tu nombre y apellido">
+                </div>
+                <label for="email" class="form-label contacto__campos">Email:</label>
+                <div class="mb-3">
+                  <input type="text" class="form-control contacto__placeholder" placeholder="Ingresa tu email">
+                </div>
+                <label for="telefono" class="form-label contacto__campos">Numero de teléfono:</label>
+                <div class="mb-3">
+                  <input type="text" class="form-control contacto__placeholder" placeholder="Tu numero de teléfono">
+                </div>
+                <div class="mb-3">
+                  <label for="consulta" class="form-label contacto__campos">Tu consulta</label>
+                  <textarea class="form-control contacto__placeholder" rows="3"></textarea>
+                </div>
+                <input type="submit" class="boton__gradiente" value="Enviar">
+                <input type="reset" class="boton__gradiente" value="Reiniciar">
+              </div>
             </section>
         </main>
         <footer>

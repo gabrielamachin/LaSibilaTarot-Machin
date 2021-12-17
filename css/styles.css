@@ -155,6 +155,8 @@ nav {
     color: #58C5BF;
     font-family: "Quicksand", sans-serif;
     font-weight: bold; }
+  .contacto__placeholder {
+    font-family: "Quicksand", sans-serif; }
   .contacto__boton {
     background: #F28F79;
     color: #EBF6FC; }
