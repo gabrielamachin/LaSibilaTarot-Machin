@@ -38,6 +38,13 @@ nav{
         }
 }
 
+/* Implementación de extend */
+.boton__gradiente--contacto
+{
+    @extend .boton__gradiente;
+    margin-right: 1.50rem;
+}
+
 .header{
     display: flex;
     flex-wrap: wrap;
@@ -91,6 +98,15 @@ nav{
         }
 }
 
+/* Implementación de mixin */
+@mixin textos($fuente, $tFuente, $alineacion, $color) {
+    font-family: $fuente;
+    font-size: $tFuente;
+    text-align: $alineacion;
+    color: $color;
+ }
+ 
+
 .blog{
     margin-bottom: 10px;
     display: block;
@@ -101,28 +117,13 @@ nav{
     width: 100%;
     border-color: #58C5BF;
         &__titulo{
-            color: $paleta-color-titulos;
-            font-family: $fuente-titulos;
-            font-size: 30px;
-            text-align: center;
+            @include textos($fuente-titulos, 1.875rem, center, $paleta-color-titulos);
         }
         &__subtitulo{
-            color: $paleta-color-titulos;
-            font-family: $fuente-parrafos;
-            text-align: center;
-            font-size: 20px;
-        }
-        &__subtitulolista{
-            font-family: $fuente-parrafos;
-            text-align: left;
-            font-size: 20px;
-            list-style: none;
+            @include textos($fuente-parrafos, 1.25rem, center, $paleta-color-titulos);
         }
         &__lista__entrada{
-            font-family: $fuente-parrafos;
-            text-align: left;
-            font-size: 20px;
-            color: $paleta-color-titulos;
+            @include textos($fuente-parrafos, 1.25rem, left, $paleta-color-titulos);
         }
         &__imagen{
             max-width: 560px;
@@ -152,10 +153,17 @@ nav{
         }
 }
 
+/* Implementación de map */
+$parrafos: (
+  alineacionTexto: left,
+  fuente:  $fuente-parrafos,
+  tFuente: 1.25rem
+);
+
 .descripcion{
-    font-family: $fuente-parrafos;
-    text-align: left;
-    font-size: 20px;
+    font-family: map-get($parrafos, fuente);
+    text-align: map-get($parrafos, alineacionTexto);
+    font-size: map-get($parrafos, tFuente);
         &__sesion{
             font-family: $fuente-parrafos;
             text-align: center;
