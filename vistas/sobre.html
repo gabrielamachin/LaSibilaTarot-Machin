@@ -15,28 +15,45 @@
         <link rel="stylesheet" href="../css/styles.css" />
     </head>
     <body>
-        <header class="header">
-            <img src="../img/logo.jpg" class="header__img" alt="Logo La Sibila Tarot">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../vistas/servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../vistas/sobre.html">Acerca de mi</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../vistas/tienda.html">Tienda de lecturas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../vistas/blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../vistas/contacto.html">Contacto</a>
-                </li>
-              </ul>
+        <header>
+            <nav class="navbar navbar-light fondo-nav">
+                <div class="container-fluid fondo-nav">
+                    <a class="navbar-brand" href="#">
+                        <img class="header__img" src="../img/logo.jpg" alt="Logo La Sibila Tarot">
+                    </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header fondo-nav">
+                      <h5 class="offcanvas-title nav__titulo" id="offcanvasNavbarLabel">La Sibila Tarot</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../vistas/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../vistas/sobre.html">Acerca de mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../vistas/tienda.html">Tienda de lecturas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../vistas/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../vistas/contacto.html">Contacto</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
         </header>
         <main>
             <section>
@@ -49,10 +66,10 @@
                     <h3 class="titulo">Principios de trabajo</h3>
                     <div class="contenedor">
                         <div class="contenedor__principios">
-                            <p class="titulo__principios">Enfoque holístico, no predictivo</p>
+                            <p class="titulo__principios">Enfoque holístico</p>
                             <p class="descripcion">Las cartas nos indican tendencias, nos advierten o nos aconsejan sobre nuestro presente y muchas veces sobre lo
                                 que puede pasar. Pero lo cierto es que nadie sabe lo que puede suceder, y somos nosotros quienes tomamos las decisiones sobre nuestra
-                                vida todos los días. El tarot no es una sentence, sino que puede llegar a ser una guía.
+                                vida todos los días. El tarot no es una sentencia, sino que puede llegar a ser una guía.
                             </p>
                         </div>
                         <div class="contenedor__principios">
@@ -69,18 +86,44 @@
                                 al mismo tiempo que aceptando aquellas que no dependen de sí.
                             </p>
                         </div>
+                        <div class="contenedor__principios">
+                            <p class="titulo__principios">Profesionalismo</p>
+                            <p class="descripcion">Para esto es esencial conocer los alcances de este oficio, y tomar dimensión de que las sesiones actuan a modo de guía,
+                                y no nos introducimos en los dominios de conocimiento de otros profesionales. Si la persona está realizando o debe realizar un
+                                tratamiento médico, esto es prioridad y debe atenderse con los profesionales competentes, lo mismo vale para todas las áreas, como
+                                pueden ser legales o judiciales, financieras, entre otras.
+                            </p>
+                        </div>
+                        <div class="contenedor__principios">
+                            <p class="titulo__principios">Respeto</p>
+                            <p class="descripcion">Para acceder a una lectura o sesión no se debe practicar ninguna religión en particular, ni tener (o no) una creencia 
+                                específica, consideramos que esto pertence al ámbito privado de las personas y por lo tanto realizamos nuestro trabajo en el marco de la 
+                                diversidad y el respeto.
+                            </p>
+                        </div>
+                        <div class="contenedor__principios">
+                            <p class="titulo__principios">Formación continua</p>
+                            <p class="descripcion">Si bien en el área del esoterismo hay un gran énfasis en recuperar y transmitir antiguos legados y tradiciones, también
+                                es muy importante continuar estudiando y profundizando contenidos, para acompañar los cambios sociales de los que todas las personas somos
+                                parte y brindar nuestros servicios de forma moderna y empática.
+                            </p>
+                        </div>
                     </div>
                 </article>
             </section>
         </main>
         <footer>
-            <nav>
-                <ul class="footer">
-                    <li class="footer__redes"> <a class="footer__links" href="https://twitter.com" target="blank">Twitter</a> </li>
-                    <li class="footer__redes"> <a class="footer__links" href="https://instagram.com" target="blank">Instagram</a> </li>
-                    <li class="footer__redes"> <a class="footer__links" href="https://facebook.com" target="blank">Facebook</a> </li>
-                </ul>   
-            </nav>   
+            <ul class="nav justify-content-center footer">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://twitter.com">Twitter</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://instagram.com">Instagram</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://facebook.com">Facebook</a>
+                </li>
+              </ul>   
         </footer>
     </body>
 </html>

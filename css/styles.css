@@ -3,8 +3,7 @@
 /* SCSS */
 nav {
   background-color: #F28F79;
-  color: #EBF6FC;
-  padding: 10px; }
+  color: #EBF6FC; }
 
 .boton__gradiente, .boton__gradiente--contacto {
   margin: 2px;
@@ -24,7 +23,7 @@ nav {
   cursor: pointer;
   display: inline-block;
   border-radius: 25px;
-  background: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%); }
+  background: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%); }
   .boton__gradiente:hover, .boton__gradiente--contacto:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     margin: 8px 10px 12px;
@@ -42,12 +41,13 @@ nav {
   justify-content: space-between;
   padding: 30px 20px; }
   .header__img {
-    max-width: 100%; }
+    width: 3.75rem; }
 
 .footer {
   list-style: none;
   text-align: center;
-  align-items: center; }
+  align-items: center;
+  background-color: #F28F79; }
   .footer__redes {
     display: inline-block;
     align-items: center;
@@ -61,7 +61,8 @@ nav {
     justify-content: space-between; }
 
 .nav-link {
-  color: #EBF6FC; }
+  color: #EBF6FC;
+  font-family: "Quicksand", sans-serif; }
 
 .nav-item {
   font-family: "Quicksand", sans-serif;
@@ -69,6 +70,19 @@ nav {
   margin: 0px 10px;
   align-items: center;
   justify-content: space-between; }
+
+.fondo-nav {
+  background-color: #F28F79; }
+
+.nav__titulo {
+  color: #EBF6FC;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.25rem; }
+
+.navbar-brand {
+  color: #EBF6FC;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.25rem; }
 
 .grilla {
   display: grid;

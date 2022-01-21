@@ -15,29 +15,46 @@
         <link rel="stylesheet" href="../css/styles.css" />
     </head>
     <body>
-        <header class="header">
-            <img src="../img/logo.jpg" class="header__img" alt="Logo La Sibila Tarot">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../vistas/servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../vistas/sobre.html">Acerca de mi</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="../vistas/tienda.html">Tienda de lecturas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../vistas/blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../vistas/contacto.html">Contacto</a>
-                </li>
-              </ul>
-        </header>
+      <header>
+        <nav class="navbar navbar-light fondo-nav">
+            <div class="container-fluid fondo-nav">
+                <a class="navbar-brand" href="#">
+                    <img class="header__img" src="../img/logo.jpg" alt="Logo La Sibila Tarot">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header fondo-nav">
+                  <h5 class="offcanvas-title nav__titulo" id="offcanvasNavbarLabel">La Sibila Tarot</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../vistas/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../vistas/sobre.html">Acerca de mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../vistas/tienda.html">Tienda de lecturas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../vistas/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../vistas/contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
         <main>
             <section>
               <div class="seccionprincipal">
@@ -69,13 +86,17 @@
             </section>
         </main>
         <footer>
-            <nav>
-                <ul class="footer">
-                    <li class="footer__redes"> <a class="footer__links" href="https://twitter.com" target="blank">Twitter</a> </li>
-                    <li class="footer__redes"> <a class="footer__links" href="https://instagram.com" target="blank">Instagram</a> </li>
-                    <li class="footer__redes"> <a class="footer__links" href="https://facebook.com" target="blank">Facebook</a> </li>
-                </ul>    
-            </nav>   
-        </footer>
+          <ul class="nav justify-content-center footer">
+              <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com">Twitter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com">Instagram</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://facebook.com">Facebook</a>
+              </li>
+            </ul>   
+      </footer>
     </body>
 </html>

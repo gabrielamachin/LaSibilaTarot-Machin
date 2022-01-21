@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/* Variables */
+/* SCSS */
+nav {
+  background-color: #F28F79;
+  color: #EBF6FC;
+}
+
+.boton__gradiente, .boton__gradiente--contacto {
+  margin: 2px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  padding: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #EBF6FC;
+  border-radius: 10px;
+  border-style: none;
+  width: 200px;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+  background: -webkit-gradient(linear, left top, right top, from(#DD5E89), color-stop(51%, #F7BB97), to(#DD5E89));
+  background: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%);
+}
+
+.boton__gradiente:hover, .boton__gradiente--contacto:hover {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 8px 10px 12px;
+  background-position: right center;
+}
+
+/* Implementación de extend */
+.boton__gradiente--contacto {
+  margin-right: 1.50rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F28F79;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.header__img {
+  width: 3.75rem;
+}
+
+.footer {
+  list-style: none;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F28F79;
+}
+
+.footer__redes {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__links {
+  font-family: "Quicksand", sans-serif;
+  color: #EBF6FC;
+  text-decoration: none;
+  margin: 0px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-link {
+  color: #EBF6FC;
+  font-family: "Quicksand", sans-serif;
+}
+
+.nav-item {
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  margin: 0px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fondo-nav {
+  background-color: #F28F79;
+}
+
+.nav__titulo {
+  color: #EBF6FC;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.25rem;
+}
+
+.navbar-brand {
+  color: #EBF6FC;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.25rem;
+}
+
+.grilla {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.grilla__columnas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+/* Implementación de mixin */
+.blog {
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  border-color: #58C5BF;
+}
+
+.blog__titulo {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.875rem;
+  text-align: center;
+  color: #58C5BF;
+}
+
+.blog__subtitulo {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #58C5BF;
+}
+
+.blog__lista__entrada {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.25rem;
+  text-align: left;
+  color: #58C5BF;
+}
+
+.blog__imagen {
+  max-width: 560px;
+  max-height: 315.200;
+}
+
+.contenido__imagen {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+}
+
+.titulo {
+  color: #58C5BF;
+  font-family: "Dancing Script", cursive;
+  font-size: 36px;
+  text-align: center;
+}
+
+.titulo__principios {
+  color: #58C5BF;
+  font-family: "Quicksand", sans-serif;
+  font-size: 26px;
+  text-align: center;
+}
+
+/* Implementación de map */
+.descripcion {
+  font-family: "Quicksand", sans-serif;
+  text-align: left;
+  font-size: 1.25rem;
+}
+
+.descripcion__sesion {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+#imagenPrincipal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: auto;
+}
+
+.contacto {
+  margin: 12px;
+  color: #58C5BF;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+  border-color: #58C5BF;
+}
+
+.contacto__campos {
+  color: #58C5BF;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+
+.contacto__placeholder {
+  font-family: "Quicksand", sans-serif;
+}
+
+.contacto__boton {
+  background: #F28F79;
+  color: #EBF6FC;
+}
+
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  margin-bottom: 12px;
+}
+
+.contenedor__principios {
+  padding: 1rem;
+}
+
+.contenedor__seccion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  margin: 20px;
+}
+
+.servicios {
+  padding: 0.5rem;
+}
+
+.servicios__contenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  margin-bottom: 12px;
+}
+
+.seccionprincipal {
+  margin: 20px;
+}
+
+.carousel {
+  width: 640px;
+  height: 360px;
+}
+
+.list-group-item {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* MEDIA QUERIES - RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .contenedor__seccion, .contenedor__izquierda, .contenedor__derecha {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .grilla__inicio, .contenedor__servicios, .contenedor__acercade {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=main.css.map */
