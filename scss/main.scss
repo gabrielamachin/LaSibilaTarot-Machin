@@ -1,8 +1,8 @@
 /* Variables */
 $fuente-cursiva: 'Dancing Script', cursive;
 $fuente-parrafos: 'Quicksand', sans-serif;
-$paleta-color-fondos: #F28F79;
-$paleta-color-titulos: #58C5BF;
+$paleta-color-rosa: #F28F79;
+$paleta-color-celeste: #58C5BF;
 $paleta-color-claro: #EBF6FC;
 
 /* SCSS */
@@ -30,7 +30,7 @@ a {
 .texto__parrafos--color
 {
     @extend .texto__parrafos;
-    color: $paleta-color-titulos;
+    color: $paleta-color-celeste;
     font-size: 1.25rem;
 }
 
@@ -41,7 +41,7 @@ a {
 .texto__cursiva--color
 {
     @extend .texto__cursiva;
-    color: $paleta-color-titulos;
+    color: $paleta-color-celeste;
 }
 
 .texto__cursiva--claro
@@ -52,11 +52,11 @@ a {
 
 .nav-link {
     font-family: $fuente-parrafos;
-    color: $paleta-color-fondos;
+    color: $paleta-color-rosa;
 }
 
 .boton__color {
-    background-color: $paleta-color-fondos;
+    background-color: $paleta-color-rosa;
     color: $paleta-color-claro;
     font-family: $fuente-parrafos;
 }
@@ -66,7 +66,7 @@ a {
 }
 
 .navbar-main .active {
-    text-decoration: underline wavy $paleta-color-fondos;
+    text-decoration: underline wavy $paleta-color-rosa;
     text-underline-offset: 0.50rem;
 }
 
@@ -116,13 +116,45 @@ a {
 }
 
 .fondo__verde {
-    background-color: $paleta-color-titulos;
+    background-color: $paleta-color-celeste;
     filter: opacity(0.55);
+}
+
+.servicios {
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.servicios:hover {
+    color: $paleta-color-claro;
 }
 
 .card img {
     height: 17.5rem;
 }
+
+.card-img-top {
+    height: 12.5rem;
+    width: 100%;
+}
+
+.servicios::before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 0%;
+    background: $paleta-color-celeste;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.servicios:hover::before {
+    left: 0%;
+}
+
 
 @media screen and (max-width: 376px){
     body {
@@ -131,9 +163,5 @@ a {
 
     .header-main {
         height: initial;
-    }
-
-    .photo-frame {
-        font-size: 1.25rem;
     }
 }
