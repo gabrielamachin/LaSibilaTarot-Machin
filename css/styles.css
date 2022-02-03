@@ -43,6 +43,12 @@ a {
   text-decoration: underline wavy #F28F79;
   text-underline-offset: 0.50rem; }
 
+.col-img {
+  background-image: url(../img/bruja.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 500px; }
+
 .iconos__redes > a {
   width: 2.5rem;
   height: 2.5rem;
